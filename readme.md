@@ -35,6 +35,14 @@ Other ways to use it:
 
 In the browser, the key `t` switches between the light and the dark theme.
 
+## A Shorter Command: `mdv`
+
+`Microsoft.PowerShell_profile.ps1` is a copy of my PowerShell profile, the
+script PowerShell runs at every start.  It defines a function `mdv`, so
+that `mdv readme.md` is enough to start the viewer.  To use it, copy the
+function into your own profile (the command `$PROFILE` shows where that
+is) and change the path to `md_viewer.py`.
+
 ## What It Supports
 
 - CommonMark: headings, paragraphs, emphasis, lists, quotes, code,
