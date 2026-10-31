@@ -2,17 +2,19 @@
 
 **MdViewer** shows Markdown files in the browser, styled like GitHub.  It
 is a single **Python** script, `md_viewer.py`, with no dependencies: the
-Markdown parser is part of it, so there is nothing to install.
+Markdown parser is part of it, so there is nothing to install apart from
+Python 3.9 or newer.
 
 Leave it running while you edit: each time the file is saved, the page
 reloads itself and keeps its scroll position.
 
 ## Starting It
 
-From a **PowerShell** terminal:
+From a terminal (**PowerShell**, **Bash**, ...), with the path to wherever
+you put `md_viewer.py`:
 
 ```powershell
-python C:\Users\bojan\Development\MdViewer\md_viewer.py .\readme.md
+python path\to\md_viewer.py readme.md
 ```
 
 The browser opens on the file, and the terminal keeps serving it until you
@@ -57,3 +59,8 @@ file, and images show up.  It only listens on the computer itself
 - It isn't a complete CommonMark implementation: rare corner cases may
   look different from GitHub.
 - It has no emoji (`:smile:`), footnotes or Mermaid diagrams.
+
+## License
+
+MdViewer is free to use, copy and change under the MIT license; see
+`LICENSE`.
